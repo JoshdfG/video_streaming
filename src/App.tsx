@@ -14,6 +14,7 @@ import {
 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "./App.css";
+import LoadingIcon from "./loading";
 
 // For demo credentials, check out our video calling tutorial:
 // https://getstream.io/video/sdk/react/tutorial/video-calling/
@@ -65,7 +66,12 @@ export const UILayout = () => {
   const { useCallCallingState } = useCallStateHooks();
   const callingState = useCallCallingState();
   if (callingState !== CallingState.JOINED) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loading-container">
+        <LoadingIcon />
+        <div className="loading-text">Loading...</div>
+      </div>
+    );
   }
 
   return (

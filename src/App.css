@@ -16,3 +16,18 @@ html {
   min-width: 0;
   max-width: 100%;
 }
+
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.rolling-svg {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
