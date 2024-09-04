@@ -16,7 +16,7 @@ import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "./App.css";
 import LoadingIcon from "./loading";
 
-const apiKey = import.meta.env.VITE_API_KEY;
+const apiKey = import.meta.env.VITE_API;
 const token = import.meta.env.VITE_TOKEN;
 const userId = import.meta.env.VITE_USER_ID;
 const callId = import.meta.env.VITE_CALL_ID;
