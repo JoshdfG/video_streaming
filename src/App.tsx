@@ -16,13 +16,10 @@ import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "./App.css";
 import LoadingIcon from "./loading";
 
-// For demo credentials, check out our video calling tutorial:
-// https://getstream.io/video/sdk/react/tutorial/video-calling/
-const apiKey = "mmhfdzb5evj2";
-const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Byb250by5nZXRzdHJlYW0uaW8iLCJzdWIiOiJ1c2VyL0FuYWtpbl9Tb2xvIiwidXNlcl9pZCI6IkFuYWtpbl9Tb2xvIiwidmFsaWRpdHlfaW5fc2Vjb25kcyI6NjA0ODAwLCJpYXQiOjE3MjUzOTc2MzEsImV4cCI6MTcyNjAwMjQzMX0.77tW0s2Hy3Kgmvy-l3W9nitp9csojPJHcSpJIWFhofY";
-const userId = "Anakin_Solo";
-const callId = "0b6Rb7l0HClP";
+const apiKey = import.meta.env.VITE_API_KEY;
+const token = import.meta.env.VITE_TOKEN;
+const userId = import.meta.env.VITE_USER_ID;
+const callId = import.meta.env.VITE_CALL_ID;
 
 const user: User = {
   id: userId,
